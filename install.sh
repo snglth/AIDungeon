@@ -14,7 +14,7 @@ if [[ -d "${MODELS_DIRECTORY}/${MODEL_VERSION}" ]]; then
 else
     echo "Installing dependencies"
     pip install -r requirements.txt > /dev/null
-    apt-get install aria2 unzip > /dev/null
+    apt-get install aria2 > /dev/null
 
     echo "Downloading AIDungeon2 Model... (this may take a very, very long time)"
     mkdir -p "${MODELS_DIRECTORY}"
